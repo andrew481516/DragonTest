@@ -11,6 +11,8 @@
 		1DCFFA7F28224DA600F466C0 /* CoreDataFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCFFA7428224DA600F466C0 /* CoreDataFramework.framework */; };
 		1DCFFA8428224DA600F466C0 /* CoreDataFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFFA8328224DA600F466C0 /* CoreDataFrameworkTests.swift */; };
 		1DCFFA8528224DA600F466C0 /* CoreDataFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFFA7728224DA600F466C0 /* CoreDataFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DCFFA8F28224DBE00F466C0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFFA8E28224DBE00F466C0 /* CoreDataManager.swift */; };
+		1DCFFA9228224DD900F466C0 /* CoreDataFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DCFFA9028224DD900F466C0 /* CoreDataFramework.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		1DCFFA7828224DA600F466C0 /* CoreDataFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CoreDataFramework.docc; sourceTree = "<group>"; };
 		1DCFFA7E28224DA600F466C0 /* CoreDataFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCFFA8328224DA600F466C0 /* CoreDataFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFrameworkTests.swift; sourceTree = "<group>"; };
+		1DCFFA8E28224DBE00F466C0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1DCFFA9128224DD900F466C0 /* CoreDataFramework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataFramework.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				1DCFFA7728224DA600F466C0 /* CoreDataFramework.h */,
 				1DCFFA7828224DA600F466C0 /* CoreDataFramework.docc */,
+				1DCFFA8E28224DBE00F466C0 /* CoreDataManager.swift */,
+				1DCFFA9028224DD900F466C0 /* CoreDataFramework.xcdatamodeld */,
 			);
 			path = CoreDataFramework;
 			sourceTree = "<group>";
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DCFFA8F28224DBE00F466C0 /* CoreDataManager.swift in Sources */,
+				1DCFFA9228224DD900F466C0 /* CoreDataFramework.xcdatamodeld in Sources */,
 				1DCFFA7928224DA600F466C0 /* CoreDataFramework.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -327,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,6 +350,7 @@
 		1DCFFA8928224DA600F466C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -357,7 +366,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.K.CoreDataFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.k.CoreDataFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -369,6 +378,7 @@
 		1DCFFA8A28224DA600F466C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -384,7 +394,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.K.CoreDataFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.k.CoreDataFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -396,6 +406,7 @@
 		1DCFFA8C28224DA600F466C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,6 +422,7 @@
 		1DCFFA8D28224DA600F466C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -454,6 +466,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DCFFA9028224DD900F466C0 /* CoreDataFramework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DCFFA9128224DD900F466C0 /* CoreDataFramework.xcdatamodel */,
+			);
+			currentVersion = 1DCFFA9128224DD900F466C0 /* CoreDataFramework.xcdatamodel */;
+			path = CoreDataFramework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DCFFA6B28224DA600F466C0 /* Project object */;
 }

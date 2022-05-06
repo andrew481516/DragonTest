@@ -19,6 +19,9 @@ class CoreDataFrameworkTests: XCTestCase {
     }
 
     func testExample() throws {
+        CoreDataManager.shared.createMetric(features: ["0.2324", "0.1321", "1.4342"], duration: 1.24, version: "1.234", productId: 1)
+        CoreDataManager.shared.fetch()
+        CoreDataManager.shared.deleteAllData()
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
