@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                           DESC
 
   s.platform            = :ios, '12.0'
-  s.source              = { :https => "https://github.com/andrew481516/DragonTest/releases/download/0.2/CoreDataFramework.xcframework.zip" }
+  s.source              = { :http => "https://github.com/andrew481516/DragonTest/releases/download/0.2/CoreDataFramework.xcframework.zip" }
 
   s.swift_version       = '5.0'
   s.vendored_frameworks = "CoreDataFramework.xcframework"
