@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name                = 'CoreDataFramework'
   s.module_name         = 'CoreDataFramework'
   s.version             = '1.0.0'
-  s.homepage            = 'https://dragonflai.co'
+  s.homepage            = 'https://github.com/andrew481516/DragonTest'
   s.documentation_url   = 'https://dragonflai-tech.github.io/sdk.dragonflai.co/beta-index.html'
   s.license             = { :type => 'MIT', :file => 'CoreDataFramework.xcframework/LICENSE' }
   s.author              = { 'DragonflAI LTD' => 'support@dragonflai.co' }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                           DESC
 
   s.platform            = :ios, '12.0'
-  s.source              = { :http => "https://github.com/andrew481516/test-Dragon/releases/download/1.0.0/CoreDataFramework.xcframework.zip" }
+  s.source              = { :http => "https://github.com/andrew481516/DragonTest.git" }
 
   s.swift_version       = '5.0'
   s.vendored_frameworks = "CoreDataFramework.xcframework"
